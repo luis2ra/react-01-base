@@ -1,1 +1,1 @@
-console.log('Hola Mundo!');
+console.log('Generación de branch en git inicial!');
