@@ -1,5 +1,5 @@
 // Variables y constantes
-console.log('Practica de javascript: ');
+console.log('Practica de javascript: Variables y constantes');
 
 const nombre = "Luis";
 const apellidos = "Altuve Cáceres";
