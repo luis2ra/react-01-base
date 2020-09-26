@@ -1,2 +1,2 @@
-// Funciones de JS
-console.log('Practica de Desestructuración de objetos...');
+// Práctica de Fetch API de JS
+console.log('Practica de Fetch API...');
