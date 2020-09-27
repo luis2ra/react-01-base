@@ -1,17 +1,18 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import * as serviceWorker from './serviceWorker';
+console.log('init...');
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+// uso sencillo de una constante
+const saludo = 'Hola Mundo...';
+console.log( saludo );
 
-// If you want your app to work offline and load faster, you can change
-// unregister() to register() below. Note this comes with some pitfalls.
-// Learn more about service workers: https://bit.ly/CRA-PWA
-serviceWorker.unregister();
+// uso de expresiones etiquetadas dentro de una constante
+const saludo2 = <h1>Hola Mundo</h1>;
+console.log( saludo2 );
+
+const divRoot = document.querySelector('#root');
+console.log( divRoot );
+
+// para renderizar el saludo2 dentro del HTML
+ReactDOM.render( saludo2, divRoot );
+
