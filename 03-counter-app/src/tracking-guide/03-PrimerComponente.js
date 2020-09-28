@@ -1,8 +1,8 @@
-// DefaultProps - video 40
+// PropTypes - video 39
 import React from 'react';
 import PropTypes from 'prop-types';
 
-const PrimerComponente = ({ mensaje, msgExtra } ) => {
+const PrimerComponente = ({ mensaje } ) => {
     console.log( mensaje );
 
     // if ( !mensaje ) {
@@ -12,7 +12,7 @@ const PrimerComponente = ({ mensaje, msgExtra } ) => {
     return (
         <>
             <h1> { mensaje } </h1>
-            <p> { msgExtra } </p>
+            <p>Mi primera aplicación</p>
         </>
     );
 }
@@ -21,7 +21,4 @@ PrimerComponente.propTypes = {
     mensaje: PropTypes.string.isRequired
 }
 
-PrimerComponente.defaultProps = {
-    msgExtra: "Parrafo adicional"
-}
 export default PrimerComponente;

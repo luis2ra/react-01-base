@@ -1,7 +1,7 @@
-// DefaultProps - video 40
+// PropTypes - video 39
 import React from 'react';
 import ReactDOM from 'react-dom';
-import PrimerComponente from './PrimerComponente';
+import PrimerComponente from './03-PrimerComponente';
 import './index.css';
 
 console.log('init...');
