@@ -1,15 +1,4 @@
-// DefaultProps - video 40
-import React from 'react';
-import ReactDOM from 'react-dom';
-import PrimerComponente from './PrimerComponente';
+// Condiciones iniciales para desarrollar tarea - video 41
 import './index.css';
 
 console.log('init...');
-
-const divRoot = document.querySelector('#root');
-
-// llamado del componente sin la variable esperada "mensaje"
-// ReactDOM.render( <PrimerComponente />, divRoot );
-
-// llamado del componente definiendo la variable "mensaje"
-ReactDOM.render( <PrimerComponente mensaje="Hola Mundo"/>, divRoot );
