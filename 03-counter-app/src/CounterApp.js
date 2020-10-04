@@ -1,27 +1,24 @@
-// UseState - Hook
+// UseState - Hook 
+// Add events handleSubtract and handleReset
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 
 const CounterApp = ( { value } ) => {
     
-    /**
-     * En este punto vemos en el navegador lo siguiente:
-     * En Console se ve como un arreglo
-     * En Components, se ve como un objeto
-     */
-    // const state = useState('Goku');
-    // console.log( state );
+    const [ counter, setCounter ] = useState( value );
+    console.log( counter );
 
-    /**
-     * Se define ahora como un []
-     */
-    const [ counter, setCounter ] = useState( 0 );
-    console.log( counter, setCounter );
-
-    // handleAdd : extrayendo la función a ejecutar para el evento click
     const handleAdd = () => {
         setCounter( counter + 1 );
         // setCounter( (c) => c + 1 );
+    }
+
+    const handleReset = () => {
+        setCounter( value );
+    }
+
+    const handleSubtract = () => {
+        setCounter( counter - 1 );
     }
 
     return (
@@ -30,6 +27,8 @@ const CounterApp = ( { value } ) => {
             <h2> { counter } </h2>
 
             <button onClick={ handleAdd }> +1 </button>
+            <button onClick={ handleReset }> Reset ({ value }) </button>
+            <button onClick={ handleSubtract }> -1 </button>
         </>
     );
 }
